@@ -32,14 +32,14 @@ export class AuthInterceptor implements HttpInterceptor {
             const { headers } = e;
             if (headers.get('status') === '401') {
               this.authService.logout();
-              this.authService.redirect(); // Redirecionar para a página de login
+              this.authService.redirect();
             }
           }
         }),
         catchError((error) => {
           if (error.status === 401) {
             this.authService.logout();
-            this.authService.redirect(); // Redirecionar para a página de login
+            this.authService.redirect();
           }
           throw error;
         })

@@ -14,7 +14,7 @@ export class AuthGuard {
 
     if (!authenticated || !accessToken) {
       this.authService.logout();
-      this.authService.redirect(); // Redirecionar para a página de login
+      this.authService.redirect();
       return false;
     }
     return true;
