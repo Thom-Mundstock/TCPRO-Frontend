@@ -24,11 +24,13 @@
 !.vscode/extensions.json
 
 # misc
-/.sass-cache
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
 testem.log
 /typings
 
