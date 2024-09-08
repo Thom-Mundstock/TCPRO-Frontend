@@ -1,0 +1,9 @@
+<button 
+    [class.outline]="isOutline"
+    [style.width]="width"
+    [style.height]="height"
+    [style.border-radius]="borderRadius"
+    (click)="handleClick()">
+    <img *ngIf="icon" [src]="icon" alt="button icon" class="icon">
+    {{ text }}
+</button>
