@@ -1,0 +1,23 @@
+.bar {
+    height: 1rem;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.outer-bar {
+    width: 100%;
+    background-color: #E0E0E0;
+}
+
+.progress-bar-container {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.progress-bar-label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.75rem;
+    color: #81838B;
+}
