@@ -1,1 +1,15 @@
-<p>filter works!</p>
+<div class="filter">
+    <button 
+      [class]="{ 'selected': selectedFilter === 'todos' }" 
+      (click)="selectFilter('todos')">
+        Todos
+    </button>
+
+    <div class="separator"></div>
+
+    <button 
+      [class]="{ 'selected': selectedFilter === 'estrategicos' }" 
+      (click)="selectFilter('estrategicos')">
+        Estratégicos
+    </button>
+</div>

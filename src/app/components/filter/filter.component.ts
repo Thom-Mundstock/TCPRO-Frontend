@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './filter.component.html',
-  styleUrl: './filter.component.css'
+  styleUrls: ['./filter.component.css']
 })
 export class FilterComponent {
-    //estado inicial - 'Todos'
-    selectedFilter: string = 'Todos';
+    //estado inicial - 'todos'
+    selectedFilter: string = "todos";
 
     //método para alternar entre os filtros
     selectFilter(filter: string) {
