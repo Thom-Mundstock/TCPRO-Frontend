@@ -1,14 +1,14 @@
 .label {
-    display: flex;
-    gap: 1.25rem;
-    align-items: center;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
 }
 
-.label-title{
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-family: 'Lexend', sans-serif;
-    color: #171723;
-    text-align: left;
-    margin: 0;
+.label-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Lexend", sans-serif;
+  color: var(--black2);
+  text-align: left;
+  margin: 0;
 }
