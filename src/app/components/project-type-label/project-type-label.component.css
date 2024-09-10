@@ -1,0 +1,21 @@
+.project-type-label {
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 79.4375rem;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.625rem;
+}
+  
+.icon {
+    width: 35;
+    height: 25px;
+    margin-right: 8px;
+}
+  
+.status-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2A2A41;
+}
