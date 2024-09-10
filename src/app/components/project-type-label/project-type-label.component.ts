@@ -16,13 +16,13 @@ projectType: any;
   getStatusIcon(): string {
     switch (this.status.toLowerCase()) {
       case 'em andamento':
-        return 'assets/icons/tagYellow.svg';
+        return 'assets/project-type-tags/tagYellow.svg';
       case 'planejamento':
-        return 'assets/icons/tagBlue.png';
+        return 'assets/project-type-tags/tagBlue.svg';
       case 'finalizado':
-        return 'assets/icons/tagGreen.png';
+        return 'assets/project-type-tags/tagGreen.svg';
       default:
-        return 'assets/icons/tagGrey.png';
+        return 'assets/project-type-tags/tagGrey.svg';
     }
   }
 }
