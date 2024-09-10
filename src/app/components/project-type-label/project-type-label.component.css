@@ -15,7 +15,10 @@
 }
   
 .status-label {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: Lexend;
+    font-weight: 400;
+    line-height: 26.40px;
     color: #2A2A41;
 }
