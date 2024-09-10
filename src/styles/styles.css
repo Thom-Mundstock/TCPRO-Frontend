@@ -1,10 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
+  /* brand */
   --primary: #5a50f2;
   --secondary: #9696ff;
   --tertiary: #ff7077;
+
+  /* background */
   --background: #fcfcfc;
   --background2: #fff5ea;
-  --black2: #171723;
+
+  /* complementary */
+  --complementary: #ffc6c8;
+  --complementary2: #ffb500;
+
+  /* labels */
+  --black1: #171723;
+  --black2: #2a2a41;
+  --white: #ffffff;
   --gray1: #00000040;
+
+  /* gray */
+  --gray1: #81838b;
+  --gray2: #b1b2be;
+  --gray3: #e0e0e0;
+  --gray4: #f0f0f0;
 }
