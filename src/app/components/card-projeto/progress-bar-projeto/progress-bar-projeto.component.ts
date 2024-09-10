@@ -1,4 +1,4 @@
-import { booleanAttribute, Component, Input, numberAttribute } from '@angular/core';
+import { Component, Input, numberAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-progress-bar-projeto',
@@ -12,17 +12,13 @@ export class ProgressBarProjetoComponent {
   progress!: number;
   progressBarInnerStyle!: string;
 
-  
-
   ngOnInit() {
     this.progressBarInnerStyle = `
             background-color: ${this.getProgressBarColor()}; 
             width: ${this.progress}%;
           `
   }
-
   
-    
   getProgressBarColor(): string {
     const progressBarColors = {
       "low": "#F57C83",

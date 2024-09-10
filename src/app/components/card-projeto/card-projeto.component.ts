@@ -1,7 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProgressBarProjetoComponent } from "./progress-bar-projeto/progress-bar-projeto.component";
 
 type projetoStatus = "EM_ANDAMENTO" | "FINALIZADO" | "BACKLOG" | "PLANEJAMENTO";
+
+export interface CardProjetoInput {
+    nome: string;
+    progress: number;
+    status: projetoStatus;
+    dataInicio: string;
+    dataPrazo: string;
+}
 
 @Component({
   selector: 'app-card-projeto',
@@ -11,13 +19,7 @@ type projetoStatus = "EM_ANDAMENTO" | "FINALIZADO" | "BACKLOG" | "PLANEJAMENTO";
   styleUrl: './card-projeto.component.css'
 })
 export class CardProjetoComponent {
-    projeto = {
-        nome: "Projeto 1",
-        progress: 50,
-        status:"EM_ANDAMENTO",
-        dataInicio: "01/01/23",
-        dataPrazo: "01/01/24",
-    }
+    @Input({required: true}) projeto!: CardProjetoInput; // Adiciona a propriedade projeto ao componente CardProjetoComponent
 
     cardCoverStyle!: string;
     bulletStatusColorStyle!: string;
