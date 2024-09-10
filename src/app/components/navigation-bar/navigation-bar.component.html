@@ -1,0 +1,18 @@
+<body>
+    <header class="header">
+        <img class="brand-logo" src="assets/brand.png" alt="Brand Logo">
+    
+        <div class="right-section">
+            <div *ngIf="hasSelectedProject; else noImage">
+                <img class="icon-right" src="assets/icon-notifications.png" alt="Notifications Icon">
+                <img class="icon-right" src="assets/icon-settings.png" alt="Settings Icon">
+            </div>
+
+            <ng-template #noImage></ng-template>
+
+            <div>
+                <img class="icon-person" src="assets/icon-person.png" alt="Person Icon">
+            </div>
+        </div>
+    </header>
+</body>
