@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
-import { BaseButtonComponent } from '../base-button/base-button.component';
-import { AuthService } from '../../services/auth/auth.service';  
+import { BaseButtonComponent } from '../../components/base-button/base-button.component';
+import { AuthService } from '../../services/auth/auth.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BaseFormComponent } from '../base-form/base-form.component';
+import { BaseFormComponent } from '../../components/base-form/base-form.component';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
 
 const controlNameUsToPt = new Map([
   ['username', 'Usuário'],
@@ -13,9 +19,14 @@ const controlNameUsToPt = new Map([
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [BaseButtonComponent, FormsModule, ReactiveFormsModule, BaseFormComponent],
+  imports: [
+    BaseButtonComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    BaseFormComponent,
+  ],
   templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css'
+  styleUrl: './login-page.component.css',
 })
 export class LoginPageComponent {
   model: any;
@@ -27,7 +38,7 @@ export class LoginPageComponent {
     private authService: AuthService,
     private router: Router,
     private route: ActivatedRoute,
-    private formBuilder: FormBuilder,
+    private formBuilder: FormBuilder
   ) {
     this.formLogin = this.formBuilder.group({
       username: [
@@ -38,10 +49,9 @@ export class LoginPageComponent {
     });
   }
 
-  
   signIn(): void {
     const { username, password } = this.formLogin.value;
-    console.log("username: ", username, " password: ", password);
+    console.log('username: ', username, ' password: ', password);
 
     this.authService.login(username, password).subscribe({
       next: () => {
