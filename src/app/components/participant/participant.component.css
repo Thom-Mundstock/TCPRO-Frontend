@@ -1,0 +1,38 @@
+.participant {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  color: var(--white);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: "Lexend", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--black2);
+  padding-bottom: 4px;
+}
+
+.role {
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--gray1);
+}
