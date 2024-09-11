@@ -28,11 +28,10 @@ export class AuthService {
   public login(username: string, password: string): Observable<Auth> {
     return this.http
       .post<Auth>(
-        'http://localhost:8000/auth', //TODO: Adicione a URL do backend
-        {},
+        'https://localhost:8080/auth', //TODO: Adicione a URL do backend
         {
           headers: {
-            Authorization: 'Basic ' + btoa(username + ':' + password),
+            Authorization: 'Basic ' + username + ':' + password,
           },
         }
       )
