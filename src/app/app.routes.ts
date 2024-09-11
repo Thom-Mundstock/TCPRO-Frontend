@@ -8,7 +8,7 @@ export const routes: Routes = [
     component: LoginPageComponent,
   },
   {
-    path: 'projeto/dashboard',
+    path: 'home',
     component: NavBarProjetoComponent,
     pathMatch: 'full',
   },

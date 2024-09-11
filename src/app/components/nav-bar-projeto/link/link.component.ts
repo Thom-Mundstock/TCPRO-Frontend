@@ -6,9 +6,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './link.component.html',
-  styleUrl: './link.component.css'
+  styleUrl: './link.component.css',
 })
 export class LinkComponent {
-    @Input({required: true}) to!: string;
-    @Input({required: true}) text!: string;
+  @Input({ required: true }) to!: string;
+  @Input({ required: true }) text!: string;
 }

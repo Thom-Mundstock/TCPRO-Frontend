@@ -1,21 +1,21 @@
 a {
-    text-decoration: none;
-    color: var(--Preto2);
-    text-align: center;
-    /* Headline */
-    font-family: 'Lexend', sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    cursor: pointer;
+  text-decoration: none;
+  color: var(--Black2);
+  text-align: center;
+  /* Headline */
+  font-family: "Lexend", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .link {
-    padding-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .link.active {
-    color: var(--primary);
-    font-weight: 700;
-    border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary);
 }
