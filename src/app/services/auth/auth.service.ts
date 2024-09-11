@@ -28,7 +28,7 @@ export class AuthService {
   public login(username: string, password: string): Observable<Auth> {
     return this.http
       .post<Auth>(
-        'http://localhost:8080/auth', //TODO: Adicione a URL do backend
+        'http://localhost:8000/auth', //TODO: Adicione a URL do backend
         {},
         {
           headers: {
@@ -38,7 +38,7 @@ export class AuthService {
       )
       .pipe(
         tap((auth: Auth) => {
-          if (auth.authenticated && auth.accessToken) {
+          if (auth.accessToken) {
             this.setUserLocalStorage(auth);
             return auth;
           }
