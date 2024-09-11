@@ -5,6 +5,9 @@
   --secondary: #9696ff;
   --tertiary: #ff7077;
 
+  /* input field focus */
+  --inputFocus: #ff7e78;
+
   /* background */
   --background: #fcfcfc;
   --background2: #fff5ea;
@@ -24,4 +27,5 @@
   --gray2: #b1b2be;
   --gray3: #e0e0e0;
   --gray4: #f0f0f0;
+  --gray5: #f6f6f6;
 }
