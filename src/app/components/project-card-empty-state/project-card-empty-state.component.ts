@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-card-empty-state',
@@ -14,9 +14,9 @@ export class ProjectCardEmptyStateComponent {
   getProjectTypeText() {
     switch(this.projectType) {
       case 'EM_ANDAMENTO':
-        return 'projetos em planejamento';
-      case 'PLANEJAMENTO':
         return 'projetos em andamento';
+      case 'PLANEJAMENTO':
+        return 'projetos em planejamento';
       case 'BACKLOG':
         return 'projetos em backlog';
       case 'FINALIZADO':
