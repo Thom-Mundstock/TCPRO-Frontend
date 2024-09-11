@@ -1,0 +1,14 @@
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.title {
+    color: var(--Preto2);
+/* Header */
+    font-family: 'Lexend', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+}
