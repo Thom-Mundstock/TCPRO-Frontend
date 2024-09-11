@@ -14,7 +14,7 @@
     font-family: "Lexend", sans-serif;
     font-size: 16px;
     font-weight: medium;
-    color: #fff;
+    color: --var(white);
   }
   
   .details {
@@ -26,7 +26,7 @@
     font-family: "Lexend", sans-serif;
     font-size: 16px;
     font-weight: bold;
-    color: #171723;
+    color: --var(black2);
     padding-bottom: 4px;
   }
   
@@ -34,5 +34,5 @@
     font-family: "Lexend", sans-serif;
     font-size: 14px;
     font-weight: normal;
-    color: #81838B;
+    color: --var(gray1);
   }
