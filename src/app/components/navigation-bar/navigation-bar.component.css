@@ -8,9 +8,9 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* Muda isso para organizar os elementos corretamente */
+    justify-content: space-between;
     align-items: center;
-    background-color: #9696FF;
+    background-color: var(--secondary);
     padding: 24px;
 }
 
