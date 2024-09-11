@@ -1,0 +1,19 @@
+<form class="base-form-body" [formGroup]="formGroup">
+    <ng-template ngFor let-field [ngForOf]="fields" let-i="index">
+        <div class="input_container">
+            <div class="input_label">
+                <label for="{{ field.id }}">{{ field.label }}</label>
+            </div>
+            <input
+                type="{{ field.type }}"
+                class="input_field"
+                placeholder="{{ field.placeholder }}"
+                id="{{ field.id }}"
+                name="{{ field.name }}"
+                [required]="field.required"
+                formControlName="{{ field.name }}"
+                [style.width]="field.width"
+            />
+        </div>
+    </ng-template>
+</form>

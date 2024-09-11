@@ -17,6 +17,7 @@ export class AuthInterceptor implements HttpInterceptor {
     req: HttpRequest<unknown>,
     next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
+    const isLogin = req.url.includes('login');
     const token = this.authService.token;
     if (token) {
       const authRequest = req.clone({
@@ -24,6 +25,13 @@ export class AuthInterceptor implements HttpInterceptor {
           Authorization: `Bearer ${token}`,
         },
       });
+      if (isLogin) {
+        if (this.authService.isAuthenticated) {
+          this.authService.logout();
+        }
+
+        return next.handle(req);
+      }
 
       return next.handle(authRequest).pipe(
         tap((e) => {

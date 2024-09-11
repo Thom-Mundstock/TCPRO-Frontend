@@ -1,0 +1,51 @@
+<div class="login-page-container">
+    <div class="login-page-content">
+        <div class="login-page-logo">
+            <img src='/assets/login-page/logoImage.svg'>
+        </div>
+        <div class="login-page-header">
+            <img src='/assets/login-page/star.svg'>
+            <h3>Bem-Vindo!</h3>
+        </div>
+        <app-base-form
+            class="login-page-form-body"
+            [formGroup]="formLogin"
+            [fields]="[
+                {
+                    id: 'username',
+                    label: 'Usuário',
+                    type: 'email',
+                    placeholder: 'Email',
+                    required: true,
+                    name: 'username',
+                    width: '22rem',
+                },
+                {
+                    id: 'password',
+                    label: 'Senha',
+                    type: 'password',
+                    placeholder: 'Senha',
+                    name: 'password',
+                    required: true,
+                    width: '22rem',
+                }
+            ]"
+        >
+        </app-base-form>
+        <app-base-button
+            text="Entrar"
+            class="login-page-form-button"
+            width="23rem"
+            type="submit"
+            (onClick)="signIn()"
+        ></app-base-button>
+        <app-base-button
+            [isOutline]="true"
+            text="Entrar sem login"
+            class="login-page-form-button"
+            width="23rem"
+            onclick="window.location.href = '/home'"
+        ></app-base-button>
+    </div>
+    <div class="login-page-filter"></div>
+</div>
