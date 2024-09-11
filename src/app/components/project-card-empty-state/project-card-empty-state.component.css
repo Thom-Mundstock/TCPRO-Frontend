@@ -1,0 +1,24 @@
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 231px;
+    width: 324px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.img {
+    width: 160px;
+    height: 160px;
+}
+
+.text {
+    color: var(--gray2);
+    font-family: "Lexend", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+}
