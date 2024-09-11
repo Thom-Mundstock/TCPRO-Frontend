@@ -1,41 +1,41 @@
 .input_container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20rem;
 }
 
 .input_label {
-    color: #2A2A41;
-    font-family: Lexend;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 35.2px;
+  color: var(--black2);
+  font-family: Lexend;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35.2px;
 }
 
 .input_field {
-    height: 2.5rem;
-    width: 100%;
-    border-radius: 0.5rem;
-    padding: 0 1rem;
-    border: 1px solid #2A2A41;
-    background: #F6F6F6;
-    font-family: Lexend;
-    font-size: 1rem;
-    transition: all 0.2s;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 1px solid var(--black2);
+  background: var(--gray5);
+  font-family: Lexend;
+  font-size: 1rem;
+  transition: all 0.2s;
 }
 
 .input_field::placeholder {
-    color: #B1B2BE;
-    font-family: Lexend;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26.4px;
+  color: var(--gray2);
+  font-family: Lexend;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.4px;
 }
 
 .input_field:focus {
-    border: 1px solid #FFre78;
-    background: #FFFFFF;
+  border: 1px solid var(--inputFocus);
+  background: var(--white);
 }

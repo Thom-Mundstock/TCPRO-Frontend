@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './base-input.component.html',
-  styleUrl: './base-input.component.css'
+  styleUrl: './base-input.component.css',
 })
 export class BaseInputComponent {
   @Input() id: string = '';
@@ -23,6 +23,4 @@ export class BaseInputComponent {
   handleOnChange(event: any) {
     this.valueChange.emit(event.target.value);
   }
-  
-  constructor() {}
 }
