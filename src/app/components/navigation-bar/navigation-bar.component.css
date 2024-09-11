@@ -1,0 +1,21 @@
+.header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary);
+  padding: 24px;
+}
+
+.right-section {
+  display: flex;
+}
+
+.icon-right {
+  padding-left: 40px;
+}
+
+.icon-person {
+  padding-left: 30px;
+}
