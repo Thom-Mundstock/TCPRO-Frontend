@@ -1,0 +1,52 @@
+<div>
+  <app-navigation-bar></app-navigation-bar>
+  <div class="body-container">
+    <div class="div-header">
+      <h1>Meus projetos</h1>
+      <app-base-button text="Criar"></app-base-button>
+    </div>
+    <app-filter></app-filter>
+    <br />
+    <br />
+    <hr />
+    <div>
+      <app-label-projeto-status
+        [tipo]="'EM_ANDAMENTO'"
+      ></app-label-projeto-status>
+      <div class="card-container">
+        <app-card-projeto [projeto]="projetoAndamento"></app-card-projeto>
+        <app-card-projeto [projeto]="projetoAndamento"></app-card-projeto>
+        <app-card-projeto [projeto]="projetoAndamento"></app-card-projeto>
+        <app-card-projeto [projeto]="projetoAndamento"></app-card-projeto>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <app-label-projeto-status
+        [tipo]="'PLANEJAMENTO'"
+      ></app-label-projeto-status>
+      <div class="card-container">
+        <app-card-projeto [projeto]="projetoPlanejamento"></app-card-projeto>
+        <app-card-projeto [projeto]="projetoPlanejamento"></app-card-projeto>
+        <app-card-projeto [projeto]="projetoPlanejamento"></app-card-projeto>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <app-label-projeto-status [tipo]="'BACKLOG'"></app-label-projeto-status>
+      <div class="card-container">
+        <app-card-projeto [projeto]="projetoBacklog"></app-card-projeto>
+        <app-card-projeto [projeto]="projetoBacklog"></app-card-projeto>
+      </div>
+    </div>
+    <hr />
+    <div>
+      <app-label-projeto-status
+        [tipo]="'FINALIZADO'"
+      ></app-label-projeto-status>
+      <div class="card-container">
+        <app-card-projeto [projeto]="projetoFinalizado"></app-card-projeto>
+      </div>
+    </div>
+  </div>
+</div>

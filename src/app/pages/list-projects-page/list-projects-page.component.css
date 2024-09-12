@@ -1,0 +1,64 @@
+.body-container {
+  margin: 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  justify-items: stretch;
+  margin: 16px 0;
+}
+
+.card-container app-card-projeto {
+  box-sizing: border-box;
+  min-width: 200px;
+}
+
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+app-label-projeto-status {
+  display: block;
+  margin: 16px 0;
+}
+
+@media (max-width: 600px) {
+  app-label-projeto-status {
+    margin: 12px 0;
+  }
+}
+
+.div-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.div-header h1 {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+.div-header app-base-button {
+}
+
+.app-filter {
+  margin-bottom: 20px;
+}

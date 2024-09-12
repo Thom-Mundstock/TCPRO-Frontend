@@ -68,6 +68,10 @@ export class LoginPageComponent {
     });
   }
 
+  navigateToHome() {
+    this.router.navigate(['/home']);
+  }
+
   public isValidateForm(controlName: string): boolean {
     const control = this.formLogin.get(controlName);
     return !!(control?.touched && control?.invalid);
