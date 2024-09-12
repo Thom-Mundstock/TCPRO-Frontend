@@ -1,15 +1,16 @@
 import { Routes } from '@angular/router';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NavBarProjetoComponent } from './components/nav-bar-projeto/nav-bar-projeto.component';
+import { ListProjectsPageComponent } from './pages/list-projects-page/list-projects-page.component';
 
 export const routes: Routes = [
   {
-    path: 'login',
+    path: '',
     component: LoginPageComponent,
   },
   {
     path: 'home',
-    component: NavBarProjetoComponent,
+    component: ListProjectsPageComponent,
     pathMatch: 'full',
   },
   {
