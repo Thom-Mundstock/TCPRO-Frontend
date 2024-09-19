@@ -1,12 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { BaseButtonComponent } from '../base-button/base-button.component';
 
 @Component({
-  selector: 'app-base-popup',
-  standalone: true,
-  imports: [],
+  selector: 'app-popup',
   templateUrl: './base-popup.component.html',
-  styleUrl: './base-popup.component.css'
+  styleUrls: ['./base-popup.component.css'],
+  imports: [
+    BaseButtonComponent
+  ],
+  standalone: true,
 })
-export class BasePopupComponent {
+export class PopupComponent {
+  @Input() title: string = '';  
+  @Input() width: string = "500px";
+  @Input() height: string = "500px"; 
+  
+  @Output() cancel = new EventEmitter<void>(); 
+  @Output() create = new EventEmitter<void>();
 
+  onCancel() {
+    this.cancel.emit(); 
+  }
+
+  onCreate() {
+    this.create.emit(); 
+  }
 }

@@ -1,10 +1,16 @@
-<div class="modal-overlay" (click)="closeModal()"></div>
-<div class="modal-content">
-  <div class="modal-header">
+<div class="popup-overlay" (click)="onCancel()"></div>
+<div class="popup-content" 
+    [style.width]="width"
+    [style.height]="height"
+>
+  <div class="popup-header">
     <h2>{{ title }}</h2>
-    <button (click)="closeModal()">X</button>
   </div>
-  <div class="modal-body">
+  <div class="popup-body">
     <ng-content></ng-content> 
+  </div>
+  <div class="popup-footer">
+    <app-base-button [isOutline]=true handleclick="onCancel()" text="Cancelar"/>
+    <app-base-button handleclick="onCreate()" text="Criar"/>
   </div>
 </div>

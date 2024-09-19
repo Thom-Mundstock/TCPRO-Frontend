@@ -5,6 +5,7 @@ import { ProjectCardEmptyStateComponent } from './components/project-card-empty-
 import { ParticipantComponent } from './components/participant/participant.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { AuthService } from './services/auth/auth.service';
+import { PopupComponent } from './components/base-popup/base-popup.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { AuthService } from './services/auth/auth.service';
     NavigationBarComponent,
     ProjectCardEmptyStateComponent,
     ParticipantComponent,
+    PopupComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
