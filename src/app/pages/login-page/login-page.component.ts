@@ -68,8 +68,8 @@ export class LoginPageComponent {
     });
   }
 
-  navigateToHome() {
-    this.router.navigate(['/home']);
+  navigateToDashboard() {
+    this.router.navigate(['/dashboard']);
   }
 
   public isValidateForm(controlName: string): boolean {

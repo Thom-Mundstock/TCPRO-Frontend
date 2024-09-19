@@ -9,24 +9,38 @@ export const routes: Routes = [
     component: LoginPageComponent,
   },
   {
-    path: 'home',
+    path: 'dashboard',
     component: ListProjectsPageComponent,
     pathMatch: 'full',
   },
   {
-    path: 'projeto/infos',
+    path: 'projeto',
     component: NavBarProjetoComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: NavBarProjetoComponent,
+      },
+      {
+        path: 'infos',
+        component: NavBarProjetoComponent,
+      },
+      {
+        path: 'riscos',
+        component: NavBarProjetoComponent,
+      },
+      {
+        path: 'entregas',
+        component: NavBarProjetoComponent,
+      },
+      {
+        path: 'gantt',
+        component: NavBarProjetoComponent,
+      },
+    ]
   },
   {
-    path: 'projeto/riscos',
-    component: NavBarProjetoComponent,
-  },
-  {
-    path: 'projeto/entregas',
-    component: NavBarProjetoComponent,
-  },
-  {
-    path: 'projeto/gantt',
-    component: NavBarProjetoComponent,
-  },
+    path: '**',
+    redirectTo: ''
+  }
 ];
