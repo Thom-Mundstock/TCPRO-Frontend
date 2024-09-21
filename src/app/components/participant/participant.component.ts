@@ -33,17 +33,4 @@ export class ParticipantComponent {
       .toUpperCase()
       .slice(0, 2); // retorna as primeiras duas letras
   }
-
-  /*
-  // método para retornar a cor do avatar
-  getCircleColor(): string {
-    switch (this.role.toLowerCase()) {
-      case 'gerente':
-        return '#FF7077';
-      case 'unidade envolvida':
-        return '#FFC6C8';
-      default:
-        return '#9696FF';
-    }
-  }*/
 }
