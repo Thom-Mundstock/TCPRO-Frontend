@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ProgressBarProjetoComponent } from './progress-bar-projeto/progress-bar-projeto.component';
+import { ActivatedRoute, Router } from '@angular/router';
 
 type projetoStatus = 'EM_ANDAMENTO' | 'FINALIZADO' | 'BACKLOG' | 'PLANEJAMENTO';
 
@@ -20,6 +21,10 @@ export interface CardProjetoInput {
 })
 export class CardProjetoComponent {
   @Input({ required: true }) projeto!: CardProjetoInput; // Adiciona a propriedade projeto ao componente CardProjetoComponent
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router){}
 
   cardCoverStyle!: string;
   bulletStatusColorStyle!: string;
@@ -74,5 +79,12 @@ export class CardProjetoComponent {
     this.bulletStatusColorStyle = `background-color: ${
       bulletColors[this.projeto.status as projetoStatus]
     };`;
+  }
+
+  navigateToProjetoAndStorageData() {
+      localStorage.setItem('projeto', JSON.stringify(this.projeto));
+
+      this.router.navigate(['projeto']);
+
   }
 }
