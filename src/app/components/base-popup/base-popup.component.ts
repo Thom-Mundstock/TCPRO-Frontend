@@ -16,6 +16,7 @@ export class BasePopupComponent {
   @Input() title: string = '';  
   @Input() width: string = "500px";
   @Input() height: string = "600px"; 
+  @Input() isInformation: boolean = false;
   
   @Output() cancel = new EventEmitter<void>(); 
   @Output() create = new EventEmitter<void>();

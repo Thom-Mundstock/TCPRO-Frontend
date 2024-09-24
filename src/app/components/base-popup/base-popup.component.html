@@ -3,15 +3,16 @@
     [style.width]="width"
     [style.height]="height"
 >
-  <div class="popup-header">
-    <button (click)="onCancel()" class="btn-close">
+  <div class="popup-header" [class.isInformation]="isInformation">
+    <h2 *ngIf="!isInformation">{{ title }}</h2>
+    <button (click)="onCancel()" class="btn-close" *ngIf="isInformation">
       X
     </button>
   </div>
   <div class="popup-body">
     <ng-content></ng-content> 
   </div>
-  <div class="popup-footer">
+  <div class="popup-footer" *ngIf="!isInformation">
     <app-base-button [isOutline]=true handleclick="onCancel()" text="Cancelar"/>
     <app-base-button handleclick="onCreate()" text="Criar"/>
   </div>
