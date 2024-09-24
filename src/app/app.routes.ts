@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NavBarProjetoComponent } from './components/nav-bar-projeto/nav-bar-projeto.component';
 import { ListProjectsPageComponent } from './pages/list-projects-page/list-projects-page.component';
-import { PopupComponent } from './components/base-popup/base-popup.component';
 
 export const routes: Routes = [
   {
@@ -39,10 +38,6 @@ export const routes: Routes = [
         component: NavBarProjetoComponent,
       },
     ]
-  },
-  {
-    path: 'teste',
-    component: PopupComponent,
   },
   {
     path: '**',

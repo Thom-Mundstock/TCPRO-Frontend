@@ -21,25 +21,37 @@
   
   .popup-header {
     background-color: var(--secondary);
-    padding: 40px;
+    padding: 25px;
     border-radius: 10px 10px 0px 0px;
     color: white;
-    align-items: center;
     font-weight: bold;
+    text-align: center;
   }
   
   .popup-body {
     margin: 10px 40px;
     height: 65%;
-    background-color: blue;
   }
   
   .popup-footer {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 40px;
+    padding: 30px 40px;
     gap: 20px;
     align-self: bottom;
+  }
+
+  .btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    align-self: right;
+  }
+
+  .btn-close:hover {
+    color: red;
   }
   
   

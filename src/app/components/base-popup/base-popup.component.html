@@ -1,10 +1,12 @@
-<div class="popup-overlay" (click)="onCancel()"></div>
+<div class="popup-overlay" (click)="onCancel()" ></div>
 <div class="popup-content" 
     [style.width]="width"
     [style.height]="height"
 >
   <div class="popup-header">
-    <h2>{{ title }}</h2>
+    <button (click)="onCancel()" class="btn-close">
+      X
+    </button>
   </div>
   <div class="popup-body">
     <ng-content></ng-content> 
